@@ -14,6 +14,8 @@ gem 'sass-rails', '~> 5.0'
 # Use Bootstrap & jQuery
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+# Use Bootstrap Forms
+gem 'bootstrap_form'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use Devise for Authentication

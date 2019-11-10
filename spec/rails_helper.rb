@@ -91,6 +91,11 @@ RSpec.configure do |config|
 
   config.include Devise::Test::IntegrationHelpers, type: :feature
   config.include FactoryGirl::Syntax::Methods
-  Capybara.javascript_driver = :poltergeist
+  Capybara.javascript_driver = :selenium
+  # Capybara.javascript_driver = :poltergeist
   Capybara.server = :puma
+  # Selenium Web Driver for Capybara
+  Capybara.register_driver :selenium do |app|
+    Capybara::Selenium::Driver.new(app, browser: :firefox)
+  end
 end

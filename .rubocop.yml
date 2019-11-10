@@ -11,6 +11,7 @@ AllCops:
     - 'node_modules/**/*'
     - 'vendor/**/*'
     - 'tmp/**/*'
+    - 'spec/**/*'
     - '.git/**/*'
     - 'vendor/**/*'
     - 'bin/*'

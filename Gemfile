@@ -61,8 +61,17 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'geckodriver-helper'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  # Tests
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
+  gem 'factory_girl_rails'
+  gem 'rails-controller-testing'
+  gem 'headless'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+  gem 'phantomjs', :require => 'phantomjs/poltergeist'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

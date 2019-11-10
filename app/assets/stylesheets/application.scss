@@ -12,9 +12,6 @@
  *
  */
 
-// Bootstrap
-@import "bootstrap";
- 
 // Variables
 @import "base/variables";
 
@@ -24,3 +21,10 @@
 
 // Default styles
 @import "base/default";
+
+// Media queries for a responsive design
+@import "responsive/*";
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+ 

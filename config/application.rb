@@ -16,5 +16,10 @@ module SkillsExchange
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.action_controller.include_all_helpers = false
+
+    console do
+      require "pry"
+      config.console = Pry
+    end
   end
 end

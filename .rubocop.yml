@@ -24,12 +24,8 @@ AllCops:
     - config/initializers/devise.rb
     - !ruby/regexp /old_and_unused\.rb$/
 
-Rails:
-  Enabled: true
-
-Documentation:
+Style/Documentation:
   Enabled: false
 
-ClassAndModuleChildren:
+Style/ClassAndModuleChildren:
   Enabled: false
-

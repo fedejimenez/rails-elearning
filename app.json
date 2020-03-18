@@ -1,5 +1,5 @@
 {
-  "name": "skills-exchange",
+  "name": "rails-elearning",
   "addons": ["heroku-postgresql:hobby-dev"],
   "scripts": {
     "postdeploy": "OK_TO_SEED=true bundle exec rails db:schema:load db:seed"

@@ -109,7 +109,7 @@ jobs:
     - image: circleci/postgres:9.5-alpine
       environment:
         POSTGRES_USER: postgres
-        POSTGRES_DB: skills-exchange_test
+        POSTGRES_DB: rails-elearning_test
         POSTGRES_PASSWORD: ""
         working_directory: ~/repo
 

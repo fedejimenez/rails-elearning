@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class PagesController < ApplicationController
+class HomeController < ApplicationController
   def index
     @posts = Post.limit(5)
   end

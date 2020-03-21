@@ -7,4 +7,7 @@ class HomeController < ApplicationController
 
   def about
   end
+
+  def courses
+  end
 end

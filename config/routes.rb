@@ -24,7 +24,28 @@ Rails.application.routes.draw do
     # get '/disclaimer', action: :disclaimer
   end
 
-  # posts
+  # Signup. The first renders a form, the second receives the form and create a user in the database.
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+  # get '/users' => 'users#show'
+
+  # these routes are for showing users a login form and log in / out.
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  delete '/logout' => 'sessions#destroy'
+
+  # Gmail signup/login
+  get "/auth/:provider/callback" => "sessions#create_from_omniauth"
+  get 'auth/failure', to: redirect('/')
+  get 'login', to: redirect('/auth/google_oauth2'), as: 'login_google'
+
+  # Facebook signup/login
+  get 'login', to: redirect('/auth/facebook'), as: 'login_facebook'
+
+  # Sidekiq
+  # mount Sidekiq::Web => '/sidekiq'
+
+  # Posts
   resources :posts do
     collection do
       get 'hobby'

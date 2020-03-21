@@ -15,6 +15,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require lightbox-bootstrap
 //= require turbolinks
 //= require_tree .
-//= stub plugins/validation
+//= stub custom/validation

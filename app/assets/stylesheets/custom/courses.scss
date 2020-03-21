@@ -904,6 +904,19 @@ section
 .course_image img
 {
 	max-width: 100%;
+	-webkit-transition: all 2000ms ease;
+	-moz-transition: all 2000ms ease;
+	-ms-transition: all 2000ms ease;
+	-o-transition: all 2000ms ease;
+	transition: all 2000ms ease;
+}
+.course:hover .course_image img
+{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .course_body
 {

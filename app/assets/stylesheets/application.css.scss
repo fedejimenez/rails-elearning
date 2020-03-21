@@ -20,7 +20,6 @@
 @import "partials/layout/*";
 
 // Plugins
-@import "../javascripts/plugins/*";
 @import "custom/*";
 
 // Default styles
@@ -31,6 +30,9 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+// Lightbox for galleries
+@import "lightbox-bootstrap";
  
 // Fontawesome
 @import "font-awesome";

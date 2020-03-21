@@ -61,6 +61,8 @@ GEM
       actionpack (>= 5.0)
       activemodel (>= 5.0)
     brakeman (4.8.0)
+    breadcrumbs_on_rails (4.0.0)
+      rails (>= 5.0)
     builder (3.2.4)
     bundle-audit (0.1.0)
       bundler-audit
@@ -282,6 +284,7 @@ DEPENDENCIES
   bootstrap (~> 4.3.1)
   bootstrap_form
   brakeman
+  breadcrumbs_on_rails
   bundle-audit
   byebug
   capybara (>= 2.15)

@@ -13,6 +13,17 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
+  # pages
+  scope module: 'home' do
+    # get '/faq', action: :faq
+    get '/about', action: 'about', as: 'about'
+    # get '/contact', action: :contact # ,  as: :organisation_contact
+    # get '/privacy', action: :privacy_policy
+    # get '/terms', action: :terms
+    # get '/website-terms', action: :website_terms
+    # get '/disclaimer', action: :disclaimer
+  end
+
   # posts
   resources :posts do
     collection do

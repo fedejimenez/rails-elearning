@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   def index
     add_breadcrumb 'Home', :root_path
-    # @posts = Post.limit(5)
+    # @courses = Course.limit(5)
   end
   
   def about

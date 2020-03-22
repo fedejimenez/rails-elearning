@@ -45,12 +45,13 @@ Rails.application.routes.draw do
   # Sidekiq
   # mount Sidekiq::Web => '/sidekiq'
 
-  # Posts
-  resources :posts do
+  # Courses
+  resources :courses do
     collection do
-      get 'hobby'
-      get 'study'
-      get 'team'
+      get 'programming'
+      get 'design'
+      get 'databases'
+      get 'tools'
     end
   end
 end

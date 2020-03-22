@@ -16,6 +16,7 @@
 4. Menu
 5. Section
 6. Home
+	6.1 Breadcrumbs
 7. Features
 8. Courses
 9. Counter
@@ -252,7 +253,7 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 100;
+	z-index: 1;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -498,7 +499,6 @@ section
 	left: 0px;
 	width: 100%;
 	background: #14bdee;
-	z-index: -1;
 	opacity: 0;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -576,7 +576,6 @@ section
 	width: 400px;
 	height: 100vh;
 	background: #FFFFFF;
-	z-index: 101;
 	padding-right: 60px;
 	padding-top: 87px;
 	padding-left: 50px;
@@ -767,6 +766,7 @@ section
 	width: 100%;
 	height: 180px;
 }
+
 .home_slider_container
 {
 	width: 100%;
@@ -901,39 +901,48 @@ section
 	letter-spacing: 0.1em;
 	cursor: pointer;
 }
-.home_slider_nav
+
+/*********************************
+6.1 Breadcrumbs
+*********************************/
+
+.breadcrumbs_container
 {
 	position: absolute;
-	top: 55.8%;
-	width: 50px;
-	background: #b6b7bd;
-	border-radius: 50%;
-	text-align: center;
-	z-index: 10;
-	cursor: pointer;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 13px;
+	padding-left: 3px;
+}
+.breadcrumbs ul li
+{
+	display: inline-block;
+	position: relative;
+}
+.breadcrumbs ul li:not(:last-child)::after
+{
+	display: inline-block;
+	font-family: 'FontAwesome';
+	content: '\f105';
+	margin-left: 7px;
+	margin-right: 4px;
+	color: #384158;
+}
+.breadcrumbs ul li a
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #384158;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.home_slider_prev
+.breadcrumbs ul li a:hover
 {
-	left: 75px;
-}
-.home_slider_next
-{
-	right: 75px;
-}
-.home_slider_nav i
-{
-	line-height: 50px;
-	color: #FFFFFF;
-	font-size: 22px;
-}
-.home_slider_nav:hover
-{
-	background: #14bdee;
+	color: #14bdee;
 }
 
 /*********************************
@@ -1121,7 +1130,6 @@ section
 {
 	width: 100%;
 	background: #FFFFFF;
-	z-index: 2;
 }
 .counter_background
 {
@@ -1477,7 +1485,7 @@ section
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: -86px;
-	z-index: 5;
+	z-index: 2;
 }
 .team_image img
 {

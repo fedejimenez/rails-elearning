@@ -19,3 +19,4 @@
 //= require turbolinks
 //= require_tree .
 //= stub custom/validation
+//= stub custom/coda_remover

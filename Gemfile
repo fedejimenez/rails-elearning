@@ -83,7 +83,7 @@ group :test do
   gem 'chromedriver-helper'
   # Tests
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'headless'
   gem 'poltergeist'

@@ -1,7 +1,7 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :course do
-    title 'a' * 20
-    description 'a' * 20
+    title { 'a' * 10 }
+    description { 'a' * 10 }
     user
     category
   end

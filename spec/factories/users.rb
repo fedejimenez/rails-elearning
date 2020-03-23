@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :user do
-    sequence(:name) { |n| "test#{n}" }
+    sequence(:first_name) { |n| "first#{n}" }
+    sequence(:last_name) { |n| "last#{n}" }
     sequence(:email) { |n| "test#{n}@test.com" }
-    password '123456'
-    password_confirmation '123456'
+    password { '123456' }
+    password_confirmation { '123456' }
   end
 end

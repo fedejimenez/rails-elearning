@@ -1,0 +1,35 @@
+<!-- Header Menu -->
+<div class="header_container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+          <div class="logo_container">
+            <a href="#">
+              <div class="logo_text">Code<span>jam</span></div>
+            </a>
+          </div>
+          <nav class="main_nav_contaner ml-auto">
+            <ul class="main_nav" id="main_menu">
+              <li class="active"><%= link_to 'Home', root_path %></li>
+              <li><%= link_to 'About', 'about' %></li>
+              <li><%= link_to 'Courses', 'courses' %></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Page</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search_button"><%= fa_icon "search", "aria-hidden": true %></div>
+
+            <!-- Hamburger -->
+
+            <div class="shopping_cart"><%= fa_icon "shopping-cart", "aria-hidden": true %></div>
+            <div class="hamburger menu_mm">
+                <%= fa_icon "bars", "aria-hidden": true, class: "menu_mm" %>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

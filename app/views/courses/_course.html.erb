@@ -1,0 +1,15 @@
+<div class="single-post-card" id=<%= course_path(course.id) %>>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="post-text">
+        <%= truncate(post.title, :length => 60) %>
+      </h5>
+      <div class="post-content">
+        <div class="posted-by">Posted by <%= course.user.name %></div>
+        <h3><%= course.title %></h3> 
+        <p><%= course.content %></p>
+        <%= link_to "I'm interested", course_path(course.id), class: 'interested' %>
+      </div>
+    </div>
+  </div><!-- card -->
+</div><!-- col-sm-3 -->

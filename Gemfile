@@ -47,6 +47,15 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Fontawesome
+gem "font-awesome-rails"
+
+# Breadcrumbs
+gem "breadcrumbs_on_rails"
+
+# Lightbox plugin for galleries
+gem 'lightbox-bootstrap-rails', '5.1.0.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -74,7 +83,7 @@ group :test do
   gem 'chromedriver-helper'
   # Tests
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'headless'
   gem 'poltergeist'

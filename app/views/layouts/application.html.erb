@@ -7,10 +7,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="assets/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css">
   </head>
 
   <body>
-    <%= render 'layouts/navigation'%>
-    <%= yield %>
+    <div class="super_container">
+      <%= render 'layouts/navigation'%>
+      <%= render 'layouts/navigation/modal' %>
+      <%= yield %>
+      <%= render 'layouts/footer'%>
+    </div>
   </body>
 </html>
